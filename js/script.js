@@ -1,15 +1,4 @@
-/******************************************
-Treehouse FSJS Techdegree:
-project 1 - A Random Quote Generator
-******************************************/
-
-// For assistance: 
-  // Check the "Project Resources" section of the project instructions
-  // Reach out in your Slack community - https://treehouse-fsjs-102.slack.com/app_redirect?channel=chit-chat
-
-/*** 
- * `quotes` array 
-***/
+// create the `quotes` array and populate 
 
 const quotes = [
   {
@@ -21,59 +10,36 @@ const quotes = [
   {
     contents: "When you reach the end of your rope, tie a knot in it and hang on.",
     author: "Franklin D. Roosevelt",
-    citation: "",
-    year: ""
-
   },
   {
     contents: "There is nothing permanent except change.",
-    author: "Heraclitus",
-    citation: "",
-    year: "",
-    
+    author: "Heraclitus",    
   },
   {
     contents: "You cannot shake hands with a clenched fist.",
     author: "Indira Gandhi",
-    citation: "",
-    year: "",
-    
   },
   {
     contents: "Let us sacrifice our today so that our children can have a better tomorrow.",
-    author: "A. P. J. Abdul Kalam",
-    citation: "",
-    year: "",
-    
+    author: "A. P. J. Abdul Kalam",    
   },
   {
     contents: "Do not mind anything that anyone tells you about anyone else. Judge everyone and everything for yourself.",
-    author: "Henry James",
-    citation: "",
-    year: "",
-    
+    author: "Henry James", 
   },
   {
     contents: "Learning never exhausts the mind.",
-    author: "Leonardo da Vinci",
-    citation: "",
-    year: "",
-    
+    author: "Leonardo da Vinci",    
   },
   {
     contents: "There is no charm equal to tenderness of heart.",
-    author: "Jane Austen",
-    citation: "",
-    year: "",
-    
+    author: "Jane Austen",    
   }
 ]
 
 printQuote(); // Pull the first random quote
 
-/***
- * `getRandomQuote` function returns a random number from 0 to total lenght of 'quotes' array
-***/
+ // `getRandomQuote` function returns a random number from 0 to total lenght of 'quotes' array
 
 function getRandomQuote(){
   let randomQuoteID = parseInt(Math.random() * quotes.length);
@@ -81,9 +47,7 @@ function getRandomQuote(){
   return quotes[randomQuoteID]; // Return a quote object
 } 
 
-/***
- * `printQuote` function generates final HTML output
-***/
+//`printQuote` function generates final HTML output
 
 function printQuote(){
   let quote = getRandomQuote();
